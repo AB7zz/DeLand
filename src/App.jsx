@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ConnectPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/dashboard/*" element={<DashboardPage />} />
         </Routes>
       </BrowserRouter>
     </div>
