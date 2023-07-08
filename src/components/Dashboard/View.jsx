@@ -8,8 +8,8 @@ const Card = ({title, sqft, seller, loc}) => {
     return (
         <>
             {popup && 
-                <div className='absolute px-10'>
-                    <div className='bg-white shadow-lg px-10 py-10 rounded-[20px]'>
+                <div className='absolute px-10 mb-10'>
+                    <div className='bg-white shadow-lg px-10 py-10 w-[90%] rounded-[20px]'>
                         <div className='flex justify-between'>
                             <img src={land} className='rounded-t-lg h-[300px] mb-10' alt="" />
                             <span><CancelIcon className='!text-4xl text-slate-500 cursor-pointer' onClick={() => setPopup(false)} /></span>
@@ -30,7 +30,7 @@ const Card = ({title, sqft, seller, loc}) => {
                     </div>
                 </div>
             }
-            <div className="max-w-sm bg-white border border-slate-200 rounded-lg shadow-lg bg-slate-100 border-slate-100">
+            <div className="max-w-sm bg-white border border-slate-200 rounded-lg shadow-lg bg-slate-100 border-slate-100 mb-10">
             <a href="#">
                 <img className="rounded-t-lg" src={land} alt="" />
             </a>
@@ -49,7 +49,7 @@ const Card = ({title, sqft, seller, loc}) => {
                             Mark for sale
                         </button>
                     : 
-                        <button onClick={() => setSale(true)} className="mt-5 px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none hover:bg-green-700 focus:ring-green-800">
+                        <button onClick={() => setSale(false)} className="mt-5 px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none hover:bg-green-700 focus:ring-green-800">
                             For Sale
                         </button>
                     }

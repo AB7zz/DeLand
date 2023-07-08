@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Card = ({bg, title, count}) => {
+    const cardClassName = `bg-${bg}-800 rounded-[15px] px-[30px] py-[70px]`;
     return (
-        <div className={`bg-${bg}-800 rounded-[15px] px-[30px] py-[70px]`}>
+        <div className={cardClassName}>
             <div className=''>
                 <h1 className='text-center text-4xl text-white font-semibold'>{title}</h1>
                 <div className='flex'>
